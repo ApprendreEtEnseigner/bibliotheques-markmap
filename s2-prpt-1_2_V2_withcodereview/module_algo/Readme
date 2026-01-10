@@ -1,0 +1,62 @@
+5. Routine réutilisable pour chaque nouvelle notion
+   Pour chaque thème du poly (tableaux non contraints, listes chaînées, piles, files, arbres, tris):
+   ​
+
+Créer un .md Markmap:
+
+Titre = nom de la notion.
+
+Sections: Définition, Structure de données, Opérations, Complexité, Métaphore.
+
+Créer un .adb:
+
+Types + 1 ou 2 opérations clés (pas tout le chapitre).
+
+Un scénario concret très simple (quelques valeurs).
+
+Tourner la vidéo avec la même structure:
+
+Abstrait (Markmap) → concret (IDE ADA) → rappel des liens.
+
+6. Détails pour séduire un recruteur
+   Playlists par thème:
+
+« Algorithmique en ADA – Structures séquentielles »
+
+« Algorithmique en ADA – Structures arborescentes »
+​
+
+Titres orientés compétences:
+
+« Comprendre et implémenter les listes contiguës en ADA (avec analyse de complexité) »
+
+« De la carte mentale à l’ADA: insertion dans une liste contiguë en
+O
+(
+n
+)
+O(n) ».
+
+Description YouTube:
+
+Mentionner que tu t’appuies sur un poly d’algorithmique universitaire (structures séquentielles, complexité, etc.).
+​
+
+Lister les notions abordées (types, opérations, complexité).
+
+7. Micro-plan d’action pour aujourd’hui (ultra concret)
+   Choisir le sujet: Listes contiguës – insertion/suppression.
+
+Créer episode1-liste-contigue.md (Markmap) avec la structure ci‑dessus.
+
+Finaliser listes_contigues.adb avec le scénario minimal.
+
+Tourner une première version SANS la publier (juste pour toi).
+
+Revoir:
+
+Est-ce que la carte mentale est lisible ?
+
+Est-ce que la démo suit exactement la carte ?
+
+Une fois satisfait, tu publies cette vidéo comme épisode pilote.

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css"><style>@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css');
+:root{--mm-font-family:'Caveat',cursive;--mm-font-size:50px;--mm-line-height:2.15;}
+.markmap-foreign,.markmap-foreign *{font-family:var(--mm-font-family)!important;font-size:var(--mm-font-size)!important;line-height:var(--mm-line-height)!important;}
+.markmap-foreign i.fa-solid, .markmap-foreign span.fa-solid { font: var(--fa-font-solid) !important; }
+.markmap-foreign i.fa-regular, .markmap-foreign span.fa-regular { font: var(--fa-font-regular) !important; }
+.markmap-foreign i.fa-brands, .markmap-foreign span.fa-brands { font: var(--fa-font-brands) !important; }
+.markmap-foreign i.las, .markmap-foreign i.lar { font-family: 'Line Awesome Free' !important; font-weight: 900; }
+.markmap-foreign i.lab { font-family: 'Line Awesome Brands' !important; font-weight: 400; }
+.markmap-foreign i.fa-solid, .markmap-foreign i.fa-regular, .markmap-foreign i.fa-brands, .markmap-foreign i.las, .markmap-foreign i.lar, .markmap-foreign i.lab { margin-right: .35em; vertical-align: -0.12em; }
+.markmap-link{stroke-width:18px!important;}
+.markmap-node>line{stroke-width:18px!important;}
+.markmap-link{pointer-events:none;}
+.markmap-node>circle{r:20;stroke-width:3.5;fill:rgba(255,255,255,0.08);pointer-events:all;}
+.markmap-node>circle:hover{fill:rgba(255,255,255,0.16);}</style>
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"<i class=\"fa-solid fa-wand-magic-sparkles\"></i> TABLEAU NON CONTRAIN","children":[{"content":"1. DEFINITION","children":[{"content":"TYPE-GENERIQUE","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"INDICES-LIBRES...","children":[{"content":"PENDANT","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"INSTANCIATION","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"li","lines":"12,16"}}],"payload":{"tag":"h3","lines":"9,10"}},{"content":"2. STRUCTURE-DONNEES","children":[{"content":"TYPE-GENERIQUE...","children":[{"content":"<mark>Type T_table_reel is array(integer range &lt;&gt;) of float;</mark>","children":[],"payload":{"tag":"li","lines":"19,20"}}],"payload":{"tag":"li","lines":"18,20"}},{"content":"VARIABLES-CONCRETES...","children":[{"content":"1. <mark>T1: T_table_reel(1..10) &#x2192; 10 cases</mark>","children":[],"payload":{"tag":"li","lines":"21,22","listIndex":1}},{"content":"2. <mark>T2: T_table_reel(20..45) &#x2192; 26 casess</mark>","children":[],"payload":{"tag":"li","lines":"22,24","listIndex":2}}],"payload":{"tag":"li","lines":"20,24"}}],"payload":{"tag":"h3","lines":"16,17"}},{"content":"3. IMAGE","children":[{"content":"MOULE-EXTENSIBLE...","children":[{"content":"<mark>&lt;&gt; &#x2192; g&#xe2;teaux fig&#xe9;s(1..10, 20..45)</mark>","children":[],"payload":{"tag":"li","lines":"27,29"}}],"payload":{"tag":"li","lines":"26,29"}}],"payload":{"tag":"h3","lines":"24,25"}},{"content":"4. CAS-PRATIQUES","children":[{"content":"DIFFERENCE","children":[{"content":"PACKAGE GTab20.ads","children":[{"content":"<mark>Type T_tab20 is array(integer range 1..2) of float;</mark>","children":[],"payload":{"tag":"li","lines":"33,34"}}],"payload":{"tag":"li","lines":"32,34"}},{"content":"PACKAGE Gestion_tableau.ads","children":[{"content":"<mark>Type T_table_reel is array(integer range &lt;&gt;) of float;</mark>","children":[],"payload":{"tag":"li","lines":"35,36"}}],"payload":{"tag":"li","lines":"34,36"}},{"content":"PACKAGE GTab20.adb","children":[{"content":"<mark>For i in T&apos;range loop &#x2192; T&apos;range = 1..2</mark>","children":[],"payload":{"tag":"li","lines":"37,38"}}],"payload":{"tag":"li","lines":"36,38"}},{"content":"PACKAGE Gestion_tableau.adb","children":[{"content":"<mark>For i in T&apos;range loop &#x2192; T&apos;range = 1..n</mark>","children":[],"payload":{"tag":"li","lines":"39,41"}}],"payload":{"tag":"li","lines":"38,41"}}],"payload":{"tag":"li","lines":"31,41"}}],"payload":{"tag":"h3","lines":"29,30"}},{"content":"5. COMPLEXITE","children":[{"content":"<mark>op&#xe9;rations fondamentales = lectures/assignations sur T(i).</mark>","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"<mark>Saisie = boucle for i in T&apos;range &#x2192; lit toutes les cases,</mark>","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"<mark>Complexit&#xe9; temps = O(n)</mark>","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"<mark>pire = mieux = moyenne</mark>","children":[],"payload":{"tag":"li","lines":"46,47"}}],"payload":{"tag":"h3","lines":"41,42"}}],"payload":{"tag":"h2","lines":"7,8"}},{"colorFreezeLevel":2,"initialExpandLevel":1})</script>
+</body>
+</html>
